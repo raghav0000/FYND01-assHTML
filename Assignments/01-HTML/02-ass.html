@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inline vs block vs inline-block</title>
+    <style>
+        .check {
+            background-color: bisque;
+            width: 40%;
+        }
+
+        .question {
+            font-weight: bold;
+        }
+
+        .bold {
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        .answer {
+            color: rgb(159, 146, 146);
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <span class="check">HTML</span>
+        <span class="check">CSS</span>
+        <span class="check">JavaScript</span>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <p class="bold">
+            Q2. This exercise helps understand the difference between inline, block,
+            and inline-block display types. On an HTML page add 3 span elements each
+            with the words HTML, CSS, and JavaScript. Select the 3 elements using
+            the span selector in an embedded style tag on the page and set the width
+            to 40%.
+        </p>
+
+        <p class="question">
+            How do the elements appear? Does the width have any effect? Why / Why not?
+        </p>
+
+        <p class="answer">
+            The elements appear in inline form. No, the width doesn't have any effect because it is an inline element.
+        </p>
+
+        <p class="question">
+            Next, set display to inline. Does it cause any change? Why / Why not?
+        </p>
+
+        <p class="answer">
+            It does not cause any changes because span is an inline container. This is because we are trying to change
+            inline element to inline itelf.
+        </p>
+
+        <p class="question">
+            Next, change display to block. What change does it cause?
+        </p>
+
+        <p class="answer">
+            This makes the span appear row-wise. This is because it is now a block element. This happens because block
+            takes the whole width of the screen. In block element we can also specify the width and height according to
+            our need.
+        </p>
+
+        <p class="question">
+            Next, set display to inline-block. What change does it cause?
+        </p>
+
+        <p class="answer">
+            It is an inline-block element which means that we can specify the width and height according to our need
+            which is not possible in inline element.
+        </p>
+
+        <p class="question">
+            In conclusion, summarize the differences you noticed in the 3 behavior
+            of the 3 display types. Search for other differences and jot them down
+            mentally / physically! :)
+        </p>
+
+        <p class="answer">
+            Inline element => In inline element all the elements are placed horizontally side by side. In this type we
+            cannot change the height and width of the element.
+            <br>
+            <br>
+            Block element => In block element all elements are stacked vertically rowwise. In this type we can change
+            the height and width of the element
+            <br>
+            <br>
+            Inline-block element => In inline-block all the elements are placed horizontally side by side but here we
+            can specify the height and width of the element.
+        </p>
+    </main>
+    <hr>
+    <footer>example.com</footer>
+</body>
+
+</html>
